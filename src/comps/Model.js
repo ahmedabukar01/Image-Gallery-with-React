@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 const Model = ({url,setSelectedImg}) => {
 
@@ -10,9 +11,15 @@ const Model = ({url,setSelectedImg}) => {
         
     }
     return (
-        <div className="model-backen" onClick={clickHandler}>
-          <img src={url} alt="selectedimg" />
-        </div>
+        <motion.div className="model-backen"
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+         onClick={clickHandler}>
+          <motion.img src={url} alt="selectedimg"
+          initial={{y:"-100vh"}}
+          animate={{y:0}}
+           />
+        </motion.div>
     )
 }
 
