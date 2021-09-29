@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageGrid from './comps/ImageGrid';
 import Title from './comps/Title';
 import UploadFile from './comps/UploadFile';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Title/>
       <UploadFile />
+      <ImageGrid />
     </div>
   );
 }
