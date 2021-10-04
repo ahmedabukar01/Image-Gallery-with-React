@@ -22,5 +22,6 @@ const Model = ({url,setSelectedImg}) => {
         </motion.div>
     )
 }
+// little 
 
 export default Model
